@@ -1,0 +1,48 @@
+ @model IEnumerable<PizzeriaApp.Models.Pizza>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="text-white">Ecco la tua lista</h1>
+<p class="mt-1 text-white">Da leggere, modificare ed eaggiornare ogni volta che ti serve.</p>
+
+
+<table class="table text-white">
+    <thead>
+        <tr>
+            <th>Nome</th> 
+            <th>Descrizione</th> 
+            <th>Importanza</th> 
+            <th>Note particolari</th> 
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingredients)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Modifica</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Dettagli</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Elimina</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table> 
+
+<p>
+    <a asp-action="Create">Aggiungi una nuova cosa da fare</a>
+</p>

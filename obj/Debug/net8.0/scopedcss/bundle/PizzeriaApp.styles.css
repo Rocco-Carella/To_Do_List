@@ -1,0 +1,49 @@
+/* _content/PizzeriaApp/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-v285rstlsq] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-v285rstlsq] {
+  color: #ffd900dc;
+}
+
+.btn-primary[b-v285rstlsq] {
+  color: #fff;
+  background-color: #c29b1b;
+  border-color:#c29b1b;
+}
+
+.nav-pills .nav-link.active[b-v285rstlsq], .nav-pills .show > .nav-link[b-v285rstlsq] {
+  color: #fff;
+  background-color: #c29b1b;
+  border-color:#c29b1b
+}
+
+.border-top[b-v285rstlsq] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-v285rstlsq] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-v285rstlsq] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-v285rstlsq] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-v285rstlsq] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
